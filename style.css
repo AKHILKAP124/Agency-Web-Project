@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.flex{
+    display: flex;
+    gap: 20px;
+}
+.container {
+    max-width: 90%;
+    margin-left: 5%;
+    
+}
+
+.LOGO {
+    margin-top: 40px;
+}
+.LOGO img{
+    width: 200px;
+}
+
+.main-text {
+    margin-top: 50px;
+}
+
+.main-text h1{
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    
+}
+
+.main-text > h1 span {
+    color: rgb(56, 0, 146);
+}
+
+.content1 img{
+    width: 300px;
+}
+
+.content2 img{
+    width: 300px;
+}
+.content {
+    margin-top: 30px;
+
+}
+p , h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4{
+    color: rgb(56, 0, 146) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.foot {
+    display: inline;
+    float: inline-end;
+    margin-top: 200px;
+}
+
+@media (max-width: 440px ) {
+
+    .main-text h1 {
+        text-wrap: wrap;
+        text-align: center;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+    
+    .content1 img{
+        width: 100%;
+    }
+    
+    .content2 img{
+        width: 100%;
+    }
+    .foot {
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width: 1030px ) {
+
+    .content{
+        flex-direction: column;
+        row-gap: 30px;
+
+    }
+
+    .foot{
+        margin-top: 500px;
+    }
+
+
+}
